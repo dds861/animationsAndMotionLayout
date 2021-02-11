@@ -15,5 +15,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        binding.btnAlphaAnimation.setOnClickListener { Animations.alphaAnimationOf(binding.ivIcon) }
+        binding.btnScalingAnimation.setOnClickListener { Animations.scalingAnimationOf(binding.ivIcon) }
+        binding.btnRollingAnimation.setOnClickListener { Animations.rollingAnimationOf(binding.ivIcon) }
+        binding.btnChangeBackground.setOnClickListener { Animations.changeBackgroundOf(binding.ivIcon, this) }
+        binding.btnRainyAnimation.setOnClickListener { Animations.rainyAnimationOf(binding.ivIcon, this) }
     }
 }
